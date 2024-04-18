@@ -12,9 +12,12 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
+
+    versionCatalogs {
+        create("libs").from(files("../gradle/libs.versions.toml"))
+    }
 }
 
-rootProject.name = "kover-demo-aggregation-issue"
+rootProject.name = "build-logic"
 
-includeBuild("build-logic")
-include("app", "lib-android", "lib-jvm")
+include("child1", "child2")

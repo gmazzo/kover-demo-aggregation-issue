@@ -1,0 +1,9 @@
+[versions]
+kotlinVersion = "1.9.23"
+
+[plugins]
+android-application = { id = "com.android.application", version = "8.3.2" }
+android-library = { id = "com.android.library", version = "8.3.2" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlinVersion" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinVersion" }
+kotlin-kover = { id = "org.jetbrains.kotlinx.kover", version = "0.8.0-Beta2" }
